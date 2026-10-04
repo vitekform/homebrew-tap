@@ -1,6 +1,6 @@
 # Template for the Homebrew formula in the tap (github.com/vitekform/homebrew-tap,
 # Formula/gn-cli.rb). The homebrew job in .github/workflows/gn-cli.yml fills in
-# 1.5.0 and the @SHA256_*@ placeholders from the published rsys release and
+# 1.6.0 and the @SHA256_*@ placeholders from the published rsys release and
 # pushes the result to the tap on every gn-cli-v* tag; don't edit the tap's copy.
 #
 # It installs the prebuilt binaries from rsys.ganamaga.me rather than building
@@ -8,22 +8,22 @@
 class GnCli < Formula
   desc "Command-line client for the nextgen API"
   homepage "https://github.com/vitekform/nextgen/tree/master/gn_cli"
-  version "1.5.0"
+  version "1.6.0"
 
   on_macos do
     # CI only builds an Apple Silicon binary.
     depends_on arch: :arm64
 
-    url "https://rsys.ganamaga.me/gn-cli/public/v/1.5.0/gn-cli-macos-arm64"
-    sha256 "0a240364f86d9a4e22f0aa12194f335415be5d786e63c255f726434ca6b94097"
+    url "https://rsys.ganamaga.me/gn-cli/public/v/1.6.0/gn-cli-macos-arm64"
+    sha256 "09fabeb1645c19cfe284847bfd9125d647b6344fa760ce173012ca057ff2b172"
   end
 
   on_linux do
     # The Linux binary links the system libcurl (libcurl4) dynamically.
     depends_on arch: :x86_64
 
-    url "https://rsys.ganamaga.me/gn-cli/public/v/1.5.0/gn-cli-linux-x64"
-    sha256 "b41d1a64213763e11a31be4f069622eb89205d69b100cc33f714644d0c99c817"
+    url "https://rsys.ganamaga.me/gn-cli/public/v/1.6.0/gn-cli-linux-x64"
+    sha256 "7f846d52f73165ec5591f1486227779a7ebd8569e9f3383f9f8e642bc48e3e2e"
   end
 
   def install
