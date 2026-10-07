@@ -1,0 +1,58 @@
+Copyright (c) 2026 Vít Formánek. All Rights Reserved, except as granted below.
+
+This repository (the "Tap") holds Homebrew formulae for software published by
+Vít Formánek (the "Developers"). It is generated from the Developers' private
+nextgen repository and overwritten on every release.
+
+-------------------------------------------------------------------------------
+1. THE TAP
+-------------------------------------------------------------------------------
+
+1.1 Grant. Anyone may tap, clone and use the Tap with Homebrew, and let
+    Homebrew read, copy and run its formulae, in order to install, update,
+    test and uninstall the software they describe. This licence is free,
+    non-exclusive, worldwide, and revocable as described in Section 1.3.
+
+1.2 Restrictions. No other right is granted. In particular, the formulae may
+    not be modified, republished, mirrored or included in another tap or
+    package repository without the Developers' prior written permission.
+    Forking the Tap within GitHub, to the extent GitHub's Terms of Service
+    allow it, grants no further rights.
+
+1.3 Revocation. The Developers may revoke this licence, or remove or change
+    any formula, at any time and without notice.
+
+-------------------------------------------------------------------------------
+2. THE SOFTWARE THE FORMULAE INSTALL
+-------------------------------------------------------------------------------
+
+2.1 This licence covers only the formulae. It grants no right to the
+    software they install. That software is downloaded from the Developers'
+    own servers and is licensed under its own terms, which the user accepts
+    by installing it:
+
+      gn-cli    the gn-cli Limited Public License, shown by `gn-cli license`
+
+-------------------------------------------------------------------------------
+3. DISCLAIMER OF WARRANTY AND LIMITATION OF LIABILITY
+-------------------------------------------------------------------------------
+
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE TAP IS PROVIDED "AS
+IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT
+LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR
+PURPOSE AND NONINFRINGEMENT. TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE
+LAW, IN NO EVENT SHALL THE DEVELOPERS BE LIABLE FOR ANY CLAIM, DAMAGES OR
+OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF OR IN CONNECTION WITH THE TAP OR THE USE OR OTHER DEALINGS IN
+IT. Nothing in this licence limits liability that cannot be limited under
+applicable law, such as liability for intentional harm or gross negligence,
+or for injury to a person's life or health.
+
+-------------------------------------------------------------------------------
+4. GOVERNING LAW
+-------------------------------------------------------------------------------
+
+This licence is governed by the laws of the Czech Republic, excluding its
+conflict-of-law rules. The courts of the Czech Republic have jurisdiction
+over any dispute arising from it, except where mandatory consumer protection
+law gives a consumer the right to sue in the courts of their own country.
