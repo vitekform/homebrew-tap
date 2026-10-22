@@ -1,58 +1,48 @@
-Copyright (c) 2026 Vít Formánek. All Rights Reserved, except as granted below.
+MIT License with an additional User-Agent condition
 
-This repository (the "Tap") holds Homebrew formulae for software published by
-Vít Formánek (the "Developers"). It is generated from the Developers' private
-nextgen repository and overwritten on every release.
+Copyright (c) 2026 Vít Formánek and the Contributors.
+Contributors: Ladislav Kotoulek.
 
--------------------------------------------------------------------------------
-1. THE TAP
--------------------------------------------------------------------------------
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-1.1 Grant. Anyone may tap, clone and use the Tap with Homebrew, and let
-    Homebrew read, copy and run its formulae, in order to install, update,
-    test and uninstall the software they describe. This licence is free,
-    non-exclusive, worldwide, and revocable as described in Section 1.3.
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-1.2 Restrictions. No other right is granted. In particular, the formulae may
-    not be modified, republished, mirrored or included in another tap or
-    package repository without the Developers' prior written permission.
-    Forking the Tap within GitHub, to the extent GitHub's Terms of Service
-    allow it, grants no further rights.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 
-1.3 Revocation. The Developers may revoke this licence, or remove or change
-    any formula, at any time and without notice.
+Additional User-Agent condition
 
--------------------------------------------------------------------------------
-2. THE SOFTWARE THE FORMULAE INSTALL
--------------------------------------------------------------------------------
+The permission granted above is also subject to this condition:
 
-2.1 This licence covers only the formulae. It grants no right to the
-    software they install. That software is downloaded from the Developers'
-    own servers and is licensed under its own terms, which the user accepts
-    by installing it:
+A "Modified Build" is an executable built from source code that has been
+modified from a version of the Software published by the copyright holders,
+other than a build published by the copyright holders as an official gn-cli
+build. Compiling unchanged source with a different compiler, platform or
+build configuration does not, by itself, make a build a Modified Build.
 
-      gn-cli    the gn-cli Limited Public License, shown by `gn-cli license`
+When making, using or distributing a Modified Build, you must ensure that
+every HTTP request it sends uses either:
 
--------------------------------------------------------------------------------
-3. DISCLAIMER OF WARRANTY AND LIMITATION OF LIABILITY
--------------------------------------------------------------------------------
+(a) a custom User-Agent that identifies the modified client distinctly from
+    official gn-cli builds; or
+(b) a User-Agent containing the literal substring "_fork".
 
-TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE TAP IS PROVIDED "AS
-IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT
-LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR
-PURPOSE AND NONINFRINGEMENT. TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE
-LAW, IN NO EVENT SHALL THE DEVELOPERS BE LIABLE FOR ANY CLAIM, DAMAGES OR
-OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
-FROM, OUT OF OR IN CONNECTION WITH THE TAP OR THE USE OR OTHER DEALINGS IN
-IT. Nothing in this licence limits liability that cannot be limited under
-applicable law, such as liability for intentional harm or gross negligence,
-or for injury to a person's life or health.
+This requirement also applies when reusing saved sessions or credentials.
+The additional condition must be preserved with the permission notice in
+all copies or substantial portions of the Software.
 
--------------------------------------------------------------------------------
-4. GOVERNING LAW
--------------------------------------------------------------------------------
-
-This licence is governed by the laws of the Czech Republic, excluding its
-conflict-of-law rules. The courts of the Czech Republic have jurisdiction
-over any dispute arising from it, except where mandatory consumer protection
-law gives a consumer the right to sue in the courts of their own country.
+This licence covers the CLI software, not access to the hosted NextGen
+services. Use of those services remains subject to their applicable terms.
+Third-party components remain under their respective licences, as listed
+in THIRD-PARTY-NOTICES.
