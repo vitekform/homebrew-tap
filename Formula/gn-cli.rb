@@ -1,6 +1,6 @@
 # Template for the Homebrew formula in the tap (github.com/vitekform/homebrew-tap,
 # Formula/gn-cli.rb). The homebrew job in .github/workflows/gn-cli.yml fills in
-# 1.13.0 and the @SHA256_*@ placeholders from the published rsys release and
+# 1.13.1 and the @SHA256_*@ placeholders from the published rsys release and
 # pushes the result, with LICENSE from this folder, to the tap on every
 # gn-cli-v* tag; don't edit the tap's copies.
 #
@@ -10,25 +10,25 @@ class GnCli < Formula
   desc "Command-line client for the nextgen API"
   # Source, issues and build instructions live in the standalone repository.
   homepage "https://github.com/vitekform/gn-cli"
-  version "1.13.0"
+  version "1.13.1"
   # MIT with an additional User-Agent condition; not the unmodified SPDX MIT licence.
   license :cannot_represent
 
   on_macos do
     # One universal binary (Apple Silicon and Intel), also published as gn-cli-macos-x64.
-    url "https://rsys.ganamaga.me/gn-cli/public/v/1.13.0/gn-cli-macos-arm64"
-    sha256 "da883b12bb5d6d44e7f4f4990712956713140de78c130514e1c17385e96cf897"
+    url "https://rsys.ganamaga.me/gn-cli/public/v/1.13.1/gn-cli-macos-arm64"
+    sha256 "7255a2cbddf2a6ae94a6a87d59c1126af87fa137767a41c2584c44d5c0d20904"
   end
 
   on_linux do
     # The Linux binaries link the system libcurl (libcurl4) dynamically.
     on_intel do
-      url "https://rsys.ganamaga.me/gn-cli/public/v/1.13.0/gn-cli-linux-x64"
-      sha256 "5ccf448df35e2aff7fd5fb939f2d08742744798c38b87a62f6c497c57b56d756"
+      url "https://rsys.ganamaga.me/gn-cli/public/v/1.13.1/gn-cli-linux-x64"
+      sha256 "db0d4152c87e85c9500903b109e3244e73429438c16614dc566a5e2ca8fe9afe"
     end
     on_arm do
-      url "https://rsys.ganamaga.me/gn-cli/public/v/1.13.0/gn-cli-linux-arm64"
-      sha256 "cdc29871c7593c0867df89e8e6344312df8b44c89265de4ff1e6d516aa64b3e8"
+      url "https://rsys.ganamaga.me/gn-cli/public/v/1.13.1/gn-cli-linux-arm64"
+      sha256 "1371bc2a4e48ea10ee4658650b30b1260ea2a1cf15374f660535bb4ed78cffeb"
     end
   end
 
