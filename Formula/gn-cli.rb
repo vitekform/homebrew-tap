@@ -1,6 +1,6 @@
 # Template for the Homebrew formula in the tap (github.com/vitekform/homebrew-tap,
 # Formula/gn-cli.rb). The homebrew job in .github/workflows/gn-cli.yml fills in
-# 1.15.2 and the @SHA256_*@ placeholders from the published rsys release and
+# 2.0.0 and the @SHA256_*@ placeholders from the published rsys release and
 # pushes the result, with LICENSE from this folder, to the tap on every
 # gn-cli-v* tag; don't edit the tap's copies.
 #
@@ -10,25 +10,25 @@ class GnCli < Formula
   desc "Command-line client for the nextgen API"
   # Source, issues and build instructions live in the standalone repository.
   homepage "https://github.com/vitekform/gn-cli"
-  version "1.15.2"
+  version "2.0.0"
   # MIT with an additional User-Agent condition; not the unmodified SPDX MIT licence.
   license :cannot_represent
 
   on_macos do
     # One universal binary (Apple Silicon and Intel), also published as gn-cli-macos-x64.
-    url "https://rsys.ganamaga.me/gn-cli/public/v/1.15.2/gn-cli-macos-arm64"
-    sha256 "f533799eca1fd85f0738e89a95059644da2d5e5bb5b4d4c402a387e34e606efe"
+    url "https://rsys.ganamaga.me/gn-cli/public/v/2.0.0/gn-cli-macos-arm64"
+    sha256 "920a194a7d89109691799c406eb652cba0da4331e63b6f846c2ff6f720663218"
   end
 
   on_linux do
     # The Linux binaries link the system libcurl (libcurl4) dynamically.
     on_intel do
-      url "https://rsys.ganamaga.me/gn-cli/public/v/1.15.2/gn-cli-linux-x64"
-      sha256 "90353c47b70fd8285ac48acd0a52fbf4551529597989344abf4e1048e506b518"
+      url "https://rsys.ganamaga.me/gn-cli/public/v/2.0.0/gn-cli-linux-x64"
+      sha256 "a529a05954dc3879110cead5b11e611c70780ef1e1c683580d03a2877d55763d"
     end
     on_arm do
-      url "https://rsys.ganamaga.me/gn-cli/public/v/1.15.2/gn-cli-linux-arm64"
-      sha256 "6c82688bc78565f0e4e290bc1dbfec6dc1185e095f53be9dfdeb90c2d477dacb"
+      url "https://rsys.ganamaga.me/gn-cli/public/v/2.0.0/gn-cli-linux-arm64"
+      sha256 "27ef1283d17203cac51d711533e6a504452cdb3db9af7a83a7b969fc81dd6307"
     end
   end
 
